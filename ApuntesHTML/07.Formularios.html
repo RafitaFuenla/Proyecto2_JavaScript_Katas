@@ -6,6 +6,236 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- FORM define el inicio y final de un formulario en la página web -->
+    <!-- action: Especifica la ruta del script o página que procesará los datos del formulario -->
+    <!-- method: Define cómo se enviarán los datos del formulario. Los métodos más comunes son "GET" y "POST". -->
+    <!-- enctype:  Indica cómo se codificarán los datos del formulario. El valor más común es "application/x-www-form-urlencoded". -->
+    <!-- target: Define dónde se mostrará la respuesta del formulario. Puede ser "_self" (en la misma ventana) o "_blank" (en una nueva ventana). -->
+    <!-- name: Asigna un nombre al formulario para poder acceder a él mediante JavaScript. -->
+<form action="registro_cosplay.com" method="post">
+  <input type="text" name="nombre" placeholder="Nombre completo">
+  <input type="email" name="correo" placeholder="Correo electrónico">
+  <select name="personaje">
+    <option value="">Elige tu personaje</option>
+    <option value="batman">Batman</option>
+    <option value="spiderman">Spiderman</option>
+    <option value="wonder_woman">Wonder Woman</option>
+  </select>
+  <input type="submit" value="Registrarse">
+</form>
+
+
+<!-- INPUT se utiliza para crear diferentes tipos de campos de entrada en un formulario, como campos de texto, casillas de verificación, botones de radio, etc. -->
+ <!-- type: Define el tipo de campo de entrada que se crea. Los tipos más comunes son "text", "password", "checkbox", "radio", "submit", "reset", "file", etc. -->
+<!-- name: Asigna un nombre al campo para poder acceder a su valor mediante JavaScript o en el script que procesa el formulario. -->
+<!-- value: Define el valor inicial del campo. -->
+<!-- placeholder: Muestra un texto informativo dentro del campo hasta que el usuario introduce un valor. -->
+<!-- required: Indica si el campo es obligatorio. -->
+<!-- disabled: Deshabilita el campo para que el usuario no pueda modificarlo. -->
+
+<!-- Input de tipo texto -->
+<input type="text" placeholder="Texto">
+
+<!-- Input de tipo contraseña -->
+<input type="password" placeholder="Contraseña">
+
+<!-- Input de tipo número -->
+<input type="number" placeholder="Número">
+
+<!-- Input de tipo fecha -->
+<input type="date">
+
+<!-- Input de tipo checkbox -->
+<input type="checkbox" id="checkbox">
+<label for="checkbox">Checkbox</label>
+
+<!-- Input de tipo radio -->
+<input type="radio" id="radio1" name="gender" value="male">
+<label for="radio1">Masculino</label>
+<input type="radio" id="radio2" name="gender" value="female">
+<label for="radio2">Femenino</label>
+<input type="radio" id="radio3" name="gender" value="other">
+<label for="radio3">Otro</label>
+
+<!-- Input de tipo botón -->
+<input type="button" value="Botón">
+
+<!-- Input de tipo submit -->
+<input type="submit" value="Enviar">
+
+<!-- Input de tipo archivo -->
+<input type="file"> 
+
+<!-- Input de tipo color -->
+<input type="color">
+
+<!-- Input de tipo email -->
+<input type="email" placeholder="Correo electrónico">
+
+<!-- Input de tipo URL -->
+<input type="url" placeholder="URL">
+
+<!-- Input de tipo teléfono -->
+<input type="tel" placeholder="Teléfono">
+
+<!-- Input de tipo búsqueda -->
+<input type="search" placeholder="Buscar">
+
+
+<!-- TEXTAREA: Se utiliza para crear un campo de entrada de texto extenso, ideal para comentarios, descripciones o información detallada. -->
+<!-- value: Define el valor inicial del campo. -->
+<!-- placeholder: Muestra un texto informativo dentro del campo hasta que el usuario introduce un valor. -->
+<!-- required: Campo obligatorio. -->
+<!-- disabled: Deshabilita el campo para que el usuario no pueda modificarlo. -->
+<!-- rows: Define el número de filas visibles del campo de texto. -->
+<!-- cols: Define el número de columnas visibles del campo de texto. -->
+<!-- maxlength: Define la longitud máxima del texto que se puede introducir en el campo. -->
+<textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+
+
+<!-- INPUT DE TEXTO -->
+<!-- placeholder: Muestra un texto informativo dentro del campo de texto hasta que el usuario introduce un valor. -->
+<!-- required: Indica si el campo de texto es obligatorio. -->
+<!-- disabled: Deshabilita el campo de texto. -->
+<!-- readonly: Permite que el usuario vea el contenido del campo de texto, pero no lo pueda modificar. -->
+<!-- maxlength: Define la longitud máxima del texto obligatorio. -->
+<!-- minlength: Define la longitud mínima del texto obligatorio. -->
+<!-- pattern: Define una expresión regular que el valor del campo de texto debe cumplir -->
+<input type="text" name="ciudad" placeholder="Ciudad" maxlength="50" required />
+
+
+<!-- INPUT CON NUMEROS -->
+<!-- type: "number" -->
+<!-- min: Valor mínimo: Define el valor mínimo que se puede introducir en el campo. -->
+<!-- max: Valor máximo: Define el valor máximo que se puede introducir en el campo. -->
+<!-- step: Intervalo de valores: Define el intervalo entre los valores que se pueden introducir en el campo. -->
+<form action="calculo_daño.com" method="post">
+  <input type="number" name="nivel" placeholder="Nivel del personaje" min="1" max="20">
+  <input type="number" name="daño_base" placeholder="Daño base del ataque">
+  <select name="tipo_daño">
+    <option value="">Elige el tipo de daño</option>
+    <option value="fisico">Físico</option>
+    <option value="magico">Mágico</option>
+  </select>
+  <input type="submit" value="Calcular daño">
+</form>
+
+
+<!-- INPUT CON FECHAS -->
+<!-- type: "date" -->
+<!-- min: Fecha mínima: Define la fecha mínima que se puede seleccionar en el campo. -->
+<!-- max: Fecha máxima: Define la fecha máxima que se puede seleccionar en el campo. -->
+<form action="registro_usuario.com" method="post">
+  <input type="text" name="nombre" placeholder="Nombre completo">
+  <input type="email" name="correo" placeholder="Correo electrónico">
+  <input type="date" name="fecha_nacimiento">
+  <input type="submit" value="Registrarse">
+</form>
+
+
+<!-- INPUT CON CASILLAS -->
+<!-- type: "checkbox" para casillas de verificación -->
+<!-- type: "radio" para botones de radio -->
+<!-- value: Valor del campo: Define valor que se envía al servidor cuando se selecciona la casilla o el botón de radio. -->
+<!-- checked: Casilla/botón preseleccionado: Indica si la casilla o el botón de radio está seleccionado por defecto. -->
+<form action="personaje_favorito.php" method="post">
+  <p>¿Cuáles son tus habilidades favoritas?</p>
+  <input type="checkbox" name="habilidades[]" value="sigilo"> Sigilo
+  <input type="checkbox" name="habilidades[]" value="hackeo"> Hackeo
+  <input type="checkbox" name="habilidades[]" value="combate"> Combate
+  <input type="submit" value="Enviar">
+</form>
+
+
+<!-- INPUT CON COLORES -->
+<!-- type: "color" -->
+<!-- value: Valor del color: Define el color inicial que se muestra en el selector. -->
+<form action="personalizar_armadura.com" method="post">
+  <p>Elige el color de tu armadura:</p>
+  <input type="color" name="color_armadura" value="#FF0000">
+  <input type="submit" value="Aplicar">
+</form>
+
+
+<!-- SELECT: La etiqueta select se utiliza para crear una lista de opciones desplegables en un formulario. -->
+<!-- name: Asigna nombre al campo para poder acceder a valor mediante JavaScript o en el script que procesa formulario. -->
+<!-- value: Valor predeterminado. -->
+<!-- required: Campo obligatorio: Indica si el campo es obligatorio para enviar el formulario. -->
+<!-- disabled: Campo deshabilitado: Deshabilita el campo para que el usuario no pueda modificarlo. -->
+<!-- size: Número de opciones visibles: Define número de opciones que  muestran al mismo tiempo en la lista desplegable. -->
+<!-- multiple: Selección múltiple: Permite al usuario seleccionar varias opciones de la lista. -->
+<form action="personaje_favorito.com" method="post">
+  <p>¿Cuál es tu personaje favorito?</p>
+  <select name="personaje">
+    <option value="">Elige tu personaje</option>
+    <option value="luke_skywalker">Luke Skywalker</option>
+    <option value="han_solo">Han Solo</option>
+    <option value="princesa_leia">Princesa Leia</option>
+    <option value="darth_vader">Darth Vader</option>
+  </select>
+  <input type="submit" value="Enviar">
+</form>
+
+
+<!-- DATALIST: La etiqueta datalist se utiliza para crear una lista de opciones autocompletables en un formulario. Permite al usuario seleccionar una opción de una lista predefinida mientras escribe en un campo de texto.-->
+<form action="buscar_videojuego.php" method="post">
+  <input list="videojuegos" name="nombre_videojuego" placeholder="Nombre del videojuego">
+  <datalist id="videojuegos">
+    <option value="The Legend of Zelda: Breath of the Wild">
+    <option value="Super Mario Odyssey">
+    <option value="Red Dead Redemption 2">
+    <option value="Horizon Zero Dawn">
+  </datalist>
+  <input type="submit" value="Buscar">
+</form>
+
+
+<!-- INPUT CON ARCHIVOS -->
+<!-- type: "file" -->
+<!-- name: Nombre del campo: Asigna un nombre al campo para poder acceder a los archivos seleccionados mediante JavaScript o en el script que procesa el formulario. -->
+<!-- accept: Tipos de archivos permitidos: Define los tipos de archivos que se pueden seleccionar. -->
+<!-- multiple: Selección múltiple: Permite al usuario seleccionar varios archivos. -->
+<!-- capture: Captura de imágenes/video: Permite capturar una imagen o video directamente desde el dispositivo. -->
+<form action="subir_foto_cosplay.php" method="post" enctype="multipart/form-data">
+  <input type="file" name="foto_cosplay" accept="image/*">
+  <input type="submit" value="Subir foto">
+</form>
+
+
+<!-- Organización de campos de un formulario -->
+<!-- fieldset y legend: Se utilizan para agrupar campos relacionados en un formulario. -->
+<!-- label: Se utilizan para asociar texto descriptivo a un campo de entrada. Mediante el atributo for podremos enlazarlo al id de un input para que semánticamente estén juntos e incluso que al pulsar en el label nos envíe dentro del mismo. -->
+<form action="registro_usuario.php" method="post">
+  <fieldset>
+    <legend>Información personal</legend>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" />
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" />
+  </fieldset>
+  <fieldset>
+    <legend>Contraseña</legend>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena">
+    <label for="confirmar_contrasena">Confirmar contraseña:</label>
+    <input type="password" id="confirmar_contrasena">
+  </fieldset>
+  <input type="submit" value="Registrarse">
+</form>
+
+
+<!-- Controles de progreso -->
+<!-- progress se utiliza para mostrar una barra de progreso al usuario. -->
+<!-- La etiqueta meter se utiliza para mostrar un medidor con valores mínimo, máximo y óptimo. -->
+<form action="subir_archivo.php"
+ method="post"
+ enctype="multipart/form-data">
+  <input type="file" name="archivo">
+  <progress value="0" max="100"></progress>
+  <input type="submit" value="Subir archivo">
+</form>
+
+<meter min="0" max="100" value="75">Nivel de energía</meter>
+
 </body>
 </html>
