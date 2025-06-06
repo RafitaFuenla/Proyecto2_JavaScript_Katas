@@ -7,9 +7,11 @@
 </head>
 <body>
     <!-- IMG para insertar la imagen; 
-        -src: para la ruta ya sea local o web; 
-        -alt: texto descriptivo de la imagen, para cuando no cargue la imagen o haya lector pantalla
-        -title: texto que aparece al pasar el raton por encima de la imagen
+        -src: para la ruta ya sea local o web. 
+        -alt: texto descriptivo de la imagen, para cuando no cargue la imagen o haya lector pantalla.
+        -width: configurar ancho en pixels, si solo ponemos el ancho hace la redimensionado proporcional
+        -height: configura alto en pixels, si solo ponemos el alto hace la redimensionado proporcional.
+        -title: texto que aparece al pasar el raton por encima de la imagen.
         -loading: Carga de la imagen: Indica cómo se debe cargar la imagen. Puede ser "eager" (carga la imagen inmediatamente), "lazy" (carga la imagen solo cuando es visible) o "auto" (el navegador decide cómo cargar la imagen).  
     -->
     <img 
@@ -25,7 +27,7 @@
             -sizes: Tamaño relativo de las imágenes: Indica el tamaño relativo de las imágenes en la lista. Esto ayuda al navegador a elegir la imagen más adecuada para el espacio disponible.
             -type: Tipo de imagen: Define el tipo de archivo de imagen.
         -->
-        <source srcset="moto_small.jpg" media="(max-width: 480px)">
+        <source srcset="moto_small.jpg" media="(max-width: 480px)"> <!-- Imagen con un maixmo de 480alto -->
         <source srcset="moto_medium.jpg" media="(max-width: 1024px)">
         <img src="moto.jpg" alt="HondaCB650R" sizes="(min-width: 1024px) 100vw, (min-width: 480px) 50vw, 33vw">
     </picture>
@@ -34,6 +36,8 @@
     <video controls muted poster="poster_de_matrix.jpg">
         <!-- 
             -controls: Controles de reproducción: Muestra controles de reproducción en el video, como play, pause, stop, rewind y fast forward.
+            -width: configurar ancho en pixels, si solo ponemos el ancho hace la redimensionado proporcional
+            -height: configura alto en pixels, si solo ponemos el alto hace la redimensionado proporcional.
             -type: Tipo de video: Define el tipo de archivo de video.
             -poster: Imagen de portada: Muestra una imagen de portada mientras el video no se carga.
             -loop: Reproducción en bucle.
@@ -42,19 +46,6 @@
         -->
         <source src="https://youtu.be/g_ffUK5QGok" type="video youtube">
     </video>
-
-    <!-- Para reproducir AUDIOS locales o enlaces directos de audios -->
-    <audio controls> 
-        <!-- 
-            -src: Ruta del audio: Especifica la ruta del archivo de audio que se desea reproducir. La ruta puede ser relativa o absoluta.
-            -controls: Controles de reproducción: Muestra controles de reproducción en el audio, como play, pause, stop, rewind y fast forward.
-            -type: Tipo de audio: Define el tipo de archivo de audio.
-            -loop: Reproducción en bucle.
-            -autoplay: Reproducción automática. En el caso de los audios, es buena práctica que el usuario indique cuando escuchar el audio, por lo que este atributo no se suele implementar.
-            -muted: Silencio del audio: Reproduce el audio sin sonido 
-        -->
-        <source src="banda_sonora_zelda.mp3" type="audio/mp3">
-    </audio>
 
     <video controls>
         <source src="video_youtuber.mp4" type="video/mp4">
@@ -73,5 +64,18 @@
     <!-- IFRAME: se utiliza para subir contenido multmedia web como youtube, widget interactivo, mapas de google, spotify,... -->
     <iframe width="1128" height="634" src="https://www.youtube.com/embed/g_ffUK5QGok" title="Nueva Honda CB650R 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
+
+     <!-- Para reproducir AUDIOS locales o enlaces directos de audios -->
+    <audio controls> 
+        <!-- 
+            -src: Ruta del audio: Especifica la ruta del archivo de audio que se desea reproducir. La ruta puede ser relativa o absoluta.
+            -controls: Controles de reproducción: Muestra controles de reproducción en el audio, como play, pause, stop, rewind y fast forward.
+            -type: Tipo de audio: Define el tipo de archivo de audio.
+            -loop: Reproducción en bucle.
+            -autoplay: Reproducción automática. En el caso de los audios, es buena práctica que el usuario indique cuando escuchar el audio, por lo que este atributo no se suele implementar.
+            -muted: Silencio del audio: Reproduce el audio sin sonido 
+        -->
+        <source src="banda_sonora_zelda.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
