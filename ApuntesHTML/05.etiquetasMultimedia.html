@@ -56,6 +56,24 @@
         <source src="banda_sonora_zelda.mp3" type="audio/mp3">
     </audio>
 
+    <video controls>
+        <source src="video_youtuber.mp4" type="video/mp4">
+        <!-- 
+        TRACK, se utiliza para añadir subtítulos o audiodescripciones a videos o audios. Permite que personas con discapacidades auditivas o visuales puedan disfrutar del contenido multimedia. 
+            -kind: Define el tipo de pista, como "subtitles" o "descriptions".
+            -srclang: Especifica el idioma de la pista.
+            -src: Especifica la ruta del archivo que contiene la pista de subtítulos o audiodescripción.
+            -label: Etiqueta de la pista.
+            -default: Indica si la pista es la predeterminada.
+            -delay: Especifica un retraso en segundos para la sincronización de la pista.
+        -->
+        <track kind="subtitles" srclang="es" label="Español" default src="subtitulos_es.vtt">
+    </video>
+
+    <!-- IFRAME: se utiliza para subir contenido multmedia web como youtube, widget interactivo, mapas de google, spotify,... -->
+    <iframe width="1128" height="634" src="https://www.youtube.com/embed/g_ffUK5QGok" title="Nueva Honda CB650R 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
 
     
 </body>
