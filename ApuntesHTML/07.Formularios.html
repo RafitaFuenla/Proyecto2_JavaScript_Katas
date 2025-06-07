@@ -15,6 +15,10 @@
 <form action="registro_cosplay.com" method="post">
   <input type="text" name="nombre" placeholder="Nombre completo">
   <input type="email" name="correo" placeholder="Correo electrónico">
+  
+  <br>
+  <br>
+  
   <select name="personaje">
     <option value="">Elige tu personaje</option>
     <option value="batman">Batman</option>
@@ -27,7 +31,7 @@
 
 <!-- INPUT se utiliza para crear diferentes tipos de campos de entrada en un formulario, como campos de texto, casillas de verificación, botones de radio, etc. -->
  <!-- type: Define el tipo de campo de entrada que se crea. Los tipos más comunes son "text", "password", "checkbox", "radio", "submit", "reset", "file", etc. -->
-<!-- name: Asigna un nombre al campo para poder acceder a su valor mediante JavaScript o en el script que procesa el formulario. -->
+<!-- name: Asigna nombre al campo para acceder a su valor mediante JavaScript o en el script que procesa el formulario. -->
 <!-- value: Define el valor inicial del campo. -->
 <!-- placeholder: Muestra un texto informativo dentro del campo hasta que el usuario introduce un valor. -->
 <!-- required: Indica si el campo es obligatorio. -->
@@ -39,11 +43,17 @@
 <!-- Input de tipo contraseña -->
 <input type="password" placeholder="Contraseña">
 
+<br>
+<br>
+
 <!-- Input de tipo número -->
 <input type="number" placeholder="Número">
 
 <!-- Input de tipo fecha -->
 <input type="date">
+
+<br>
+<br>
 
 <!-- Input de tipo checkbox -->
 <input type="checkbox" id="checkbox">
@@ -57,11 +67,17 @@
 <input type="radio" id="radio3" name="gender" value="other">
 <label for="radio3">Otro</label>
 
+<br>
+<br>
+
 <!-- Input de tipo botón -->
 <input type="button" value="Botón">
 
 <!-- Input de tipo submit -->
 <input type="submit" value="Enviar">
+
+<br>
+<br>
 
 <!-- Input de tipo archivo -->
 <input type="file"> 
@@ -69,17 +85,24 @@
 <!-- Input de tipo color -->
 <input type="color">
 
+<br>
+<br>
+
 <!-- Input de tipo email -->
 <input type="email" placeholder="Correo electrónico">
 
 <!-- Input de tipo URL -->
 <input type="url" placeholder="URL">
 
+
 <!-- Input de tipo teléfono -->
 <input type="tel" placeholder="Teléfono">
 
 <!-- Input de tipo búsqueda -->
 <input type="search" placeholder="Buscar">
+
+<br>
+<br>
 
 
 <!-- TEXTAREA: Se utiliza para crear un campo de entrada de texto extenso, ideal para comentarios, descripciones o información detallada. -->
@@ -91,6 +114,9 @@
 <!-- cols: Define el número de columnas visibles del campo de texto. -->
 <!-- maxlength: Define la longitud máxima del texto que se puede introducir en el campo. -->
 <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+
+<br>
+<br>
 
 
 <!-- INPUT DE TEXTO -->
@@ -132,6 +158,8 @@
   <input type="submit" value="Registrarse">
 </form>
 
+<br>
+<br>
 
 <!-- INPUT CON CASILLAS -->
 <!-- type: "checkbox" para casillas de verificación -->
@@ -139,7 +167,7 @@
 <!-- value: Valor del campo: Define valor que se envía al servidor cuando se selecciona la casilla o el botón de radio. -->
 <!-- checked: Casilla/botón preseleccionado: Indica si la casilla o el botón de radio está seleccionado por defecto. -->
 <form action="personaje_favorito.php" method="post">
-  <p>¿Cuáles son tus habilidades favoritas?</p>
+  ¿Cuáles son tus habilidades favoritas?
   <input type="checkbox" name="habilidades[]" value="sigilo"> Sigilo
   <input type="checkbox" name="habilidades[]" value="hackeo"> Hackeo
   <input type="checkbox" name="habilidades[]" value="combate"> Combate
@@ -165,7 +193,7 @@
 <!-- size: Número de opciones visibles: Define número de opciones que  muestran al mismo tiempo en la lista desplegable. -->
 <!-- multiple: Selección múltiple: Permite al usuario seleccionar varias opciones de la lista. -->
 <form action="personaje_favorito.com" method="post">
-  <p>¿Cuál es tu personaje favorito?</p>
+  ¿Cuál es tu personaje favorito?
   <select name="personaje">
     <option value="">Elige tu personaje</option>
     <option value="luke_skywalker">Luke Skywalker</option>
@@ -234,8 +262,16 @@
   <progress value="0" max="100"></progress>
   <input type="submit" value="Subir archivo">
 </form>
-
 <meter min="0" max="100" value="75">Nivel de energía</meter>
+
+
+<!-- Botones de envío -->
+<!-- input con type: "submit" se utiliza para crear un botón que envía el formulario al servidor. -->
+<form action="contacto.php" method="post">
+  <input type="text" name="nombre" placeholder="Nombre completo">
+  <input type="email" name="correo" placeholder="Correo electrónico">
+  <input type="submit" value="Enviar mensaje">
+</form>
 
 </body>
 </html>

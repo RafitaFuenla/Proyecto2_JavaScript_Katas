@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- DETAILS crea un elemento desplegable similar a un acordeón, permitiendo mostrar u ocultar información adicional. -->
+<!-- atributo OPEN indica si el desplegable está abierto o no por defecto. -->
+<!-- Mediante la etiqueta summary resumiremos el contenido de este elemento desplegable. -->
+<details>
+  <summary>¿Quiénes son los Vengadores?</summary>
+  <ul>
+    <li>Iron Man (Tony Stark)</li>
+    <li>Capitán América (Steve Rogers)</li>
+    <li>Thor</li>
+    <li>Hulk (Bruce Banner)</li>
+    <li>Viuda Negra (Natasha Romanoff)</li>
+    <li>Ojo de Halcón (Clint Barton)</li>
+  </ul>
+</details> 
+
+<br><br>
+
+
+<!-- DIALOG crea ventana diálogo modal nativa,similar a las ventanas emergentes,pero con mayor flexibilidad y accesibilidad. -->
+<!-- atributo OPEN indica si el desplegable está abierto o no por defecto. -->
+<!-- Deberemos interferir con JavaScript, cosa que podremos implementar más adelante en el programa. -->
+<dialog open>
+  <h2>¿Cuál es tu película de Star Wars favorita?</h2>
+  <form action="encuesta-starwars.php" method="post">
+    <input type="radio" name="pelicula" value="episodio-iv"> Episodio IV: Una nueva esperanza
+    <input type="radio" name="pelicula" value="episodio-v"> Episodio V: El imperio contraataca
+    <input type="radio" name="pelicula" value="episodio-vi"> Episodio VI: El retorno del Jedi
+    <input type="submit" value="Votar">
+  </form>
+</dialog>
+
+<!-- CONTENTEDITABLE convierte texto de etiqueta en editable, permitiendo modificarlo directamente en la página web. -->
+<p contenteditable="true">Nombre: Juan Pérez</p>
+
+    
+</body>
+</html>
