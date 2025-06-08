@@ -1,0 +1,53 @@
+.pulgadas {
+font-size: 0.5in; /* cada pulgada equivale a 2.54cm */
+}
+
+.centimetros {
+font-size: 0.5cm; 
+}
+
+.milimetros {
+font-size: 5mm; 
+}
+
+.puntos {
+font-size: 012pt; /* cada punto equivale a 0.35mm */
+}
+
+.picas  {
+font-size: 6pc; /* cada pica equivale a 12pt, es decir 4.23mm */
+}
+
+.em {
+    font-size: 0.5em;
+}
+
+.rem {
+    font-size: 0.5rem;
+}
+
+.pixel {
+    font-size: 12px;
+}
+
+div#contenido {
+    width: 500px;
+    background-color: aqua;
+    color: brown;
+}
+
+div.principal {
+    width: 60%;
+    background-color: rgb(47, 0, 255);
+    color: brown;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua ;
+}
