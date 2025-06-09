@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- IMG para insertar la imagen; 
         -src: para la ruta ya sea local o web. 
         -alt: texto descriptivo de la imagen, para cuando no cargue la imagen o haya lector pantalla.
@@ -14,27 +14,33 @@
         -title: texto que aparece al pasar el raton por encima de la imagen.
         -loading: Carga de la imagen: Indica cómo se debe cargar la imagen. Puede ser "eager" (carga la imagen inmediatamente), "lazy" (carga la imagen solo cuando es visible) o "auto" (el navegador decide cómo cargar la imagen).  
     -->
-    <img 
-    src="https://t4.ftcdn.net/jpg/03/89/39/09/360_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.webp" 
-    alt="Logo Batman" 
-    title="TITLE:Logotipo de BATMAN">
+    <img
+      src="https://t4.ftcdn.net/jpg/03/89/39/09/360_F_389390965_lwqVX10TBdFH2WMBH6GGF8pcNiOhzfnb.webp"
+      alt="Logo Batman"
+      title="TITLE:Logotipo de BATMAN"
+    />
 
     <!-- Version moderna de la etiqueta IMG, se adapta mejor a diferentes dispositivos -->
-    <picture> 
-        <!-- 
+    <picture>
+      <!-- 
             -srcset: Lista de imágenes: Especifica una lista de imágenes con diferentes resoluciones. El navegador elige la imagen más adecuada para el dispositivo y la resolución actual.
             -media: Condición media: Define la condición media para la que se aplica cada imagen en la lista. Puede ser una consulta de medios CSS, como "(max-width: 480px)". 
             -sizes: Tamaño relativo de las imágenes: Indica el tamaño relativo de las imágenes en la lista. Esto ayuda al navegador a elegir la imagen más adecuada para el espacio disponible.
             -type: Tipo de imagen: Define el tipo de archivo de imagen.
         -->
-        <source srcset="moto_small.jpg" media="(max-width: 480px)"> <!-- Imagen con un maixmo de 480alto -->
-        <source srcset="moto_medium.jpg" media="(max-width: 1024px)">
-        <img src="moto.jpg" alt="HondaCB650R" sizes="(min-width: 1024px) 100vw, (min-width: 480px) 50vw, 33vw">
+      <source srcset="moto_small.jpg" media="(max-width: 480px)" />
+      <!-- Imagen con un maixmo de 480alto -->
+      <source srcset="moto_medium.jpg" media="(max-width: 1024px)" />
+      <img
+        src="moto.jpg"
+        alt="HondaCB650R"
+        sizes="(min-width: 1024px) 100vw, (min-width: 480px) 50vw, 33vw"
+      />
     </picture>
 
     <!-- Para instar VIDEOS mp4 locales o enlaces directos de archivo mp4, NO VALE PARA VIDEOS DE YOUTUBE, por ejemplo -->
     <video controls muted poster="poster_de_matrix.jpg">
-        <!-- 
+      <!-- 
             -controls: Controles de reproducción: Muestra controles de reproducción en el video, como play, pause, stop, rewind y fast forward.
             -width: configurar ancho en pixels, si solo ponemos el ancho hace la redimensionado proporcional
             -height: configura alto en pixels, si solo ponemos el alto hace la redimensionado proporcional.
@@ -44,12 +50,12 @@
             -autoplay: Reproducción automática.
             -muted: Silencio del video: Reproduce el video sin sonido. Es una buena práctica comenzar los videos sin sonido y que el usuario indique si escucharlo o no. 
         -->
-        <source src="https://youtu.be/g_ffUK5QGok" type="video youtube">
+      <source src="https://youtu.be/g_ffUK5QGok" type="video youtube" />
     </video>
 
     <video controls>
-        <source src="video_youtuber.mp4" type="video/mp4">
-        <!-- 
+      <source src="video_youtuber.mp4" type="video/mp4" />
+      <!-- 
         TRACK, se utiliza para añadir subtítulos o audiodescripciones a videos o audios. Permite que personas con discapacidades auditivas o visuales puedan disfrutar del contenido multimedia. 
             -kind: Define el tipo de pista, como "subtitles" o "descriptions".
             -srclang: Especifica el idioma de la pista.
@@ -58,16 +64,31 @@
             -default: Indica si la pista es la predeterminada.
             -delay: Especifica un retraso en segundos para la sincronización de la pista.
         -->
-        <track kind="subtitles" srclang="es" label="Español" default src="subtitulos_es.vtt">
+      <track
+        kind="subtitles"
+        srclang="es"
+        label="Español"
+        default
+        src="subtitulos_es.vtt"
+      />
     </video>
 
     <!-- IFRAME: se utiliza para subir contenido multmedia web como youtube, widget interactivo, mapas de google, spotify,... -->
-    <iframe width="1128" height="634" src="https://www.youtube.com/embed/g_ffUK5QGok" title="Nueva Honda CB650R 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    <iframe
+      width="1128"
+      height="634"
+      src="https://www.youtube.com/embed/g_ffUK5QGok"
+      title="Nueva Honda CB650R 2024"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
     </iframe>
 
-     <!-- Para reproducir AUDIOS locales o enlaces directos de audios -->
-    <audio controls> 
-        <!-- 
+    <!-- Para reproducir AUDIOS locales o enlaces directos de audios -->
+    <audio controls>
+      <!-- 
             -src: Ruta del audio: Especifica la ruta del archivo de audio que se desea reproducir. La ruta puede ser relativa o absoluta.
             -controls: Controles de reproducción: Muestra controles de reproducción en el audio, como play, pause, stop, rewind y fast forward.
             -type: Tipo de audio: Define el tipo de archivo de audio.
@@ -75,7 +96,7 @@
             -autoplay: Reproducción automática. En el caso de los audios, es buena práctica que el usuario indique cuando escuchar el audio, por lo que este atributo no se suele implementar.
             -muted: Silencio del audio: Reproduce el audio sin sonido 
         -->
-        <source src="banda_sonora_zelda.mp3" type="audio/mp3">
+      <source src="banda_sonora_zelda.mp3" type="audio/mp3" />
     </audio>
-</body>
+  </body>
 </html>
