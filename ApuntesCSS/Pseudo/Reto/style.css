@@ -73,7 +73,17 @@ section li {
   list-style-type: none;
 }
 
-/* SUSITUIR EL PUNTO DE LA LISTA POR LA X */
+/* SUSITUIR EL PUNTO DE LA LISTA POR LA X (ok) */
+
+section.aventuras li::before {
+  content: "🅧";
+  padding-right: 4px;
+  color: black;
+}
+
+section.aventuras li {
+  list-style-type: none;
+}
 
 section a {
   color: #333;
@@ -82,11 +92,27 @@ section a {
   font-size: 1.2em;
 }
 
-/* AÑADIR CORCHETES A LOS ENLACES */
+section.aventuras a::before {
+  content: "[";
+}
 
-/* AÑADIR HOVER A LOS ENLACES */
+section.aventuras a::after {
+  content: "]";
+}
 
-/* AÑADIR FOCUS A LOS ENLACES */
+section.aventuras a:hover {
+  background-color: #ff0000;
+}
+
+section.aventuras a:focus {
+  color: rgb(30, 0, 255);
+}
+
+/* AÑADIR CORCHETES A LOS ENLACES (OK) */
+
+/* AÑADIR HOVER A LOS ENLACES (OK) */
+
+/* AÑADIR FOCUS A LOS ENLACES (OK)*/
 
 footer {
   background-color: #333;
