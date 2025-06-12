@@ -24,7 +24,7 @@ header h1 {
 }
 
 nav :hover {
-  background-color: #333;
+  background-color: #cbc4c4;
 }
 
 nav :focus {
@@ -41,6 +41,10 @@ nav li {
   text-align: center;
 }
 
+nav {
+  background-color: #333;
+ 
+}
 nav a {
   display: block;
   padding: 20px 0;
