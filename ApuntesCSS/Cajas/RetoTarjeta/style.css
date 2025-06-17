@@ -1,0 +1,21 @@
+div {
+  margin: 50px;
+  background-color: cyan;
+  border: 5px solid blue;
+  border-radius: 8px;
+}
+
+.imagen {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nombre {
+  padding: 10px 20px;
+}
+
+.descripcion {
+  padding: 20px;
+}
+
