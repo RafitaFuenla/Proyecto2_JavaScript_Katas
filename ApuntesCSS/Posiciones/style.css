@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.relative {
+    position: relative;
+    left: 100px;
+    background-color: brown;
+}
+
+.absolut {
+    position: absolute;
+    left: 100px;
+    background-color: yellowgreen;
+}
+
+.contenedor {
+    height: 1000px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.box-one {
+    height: 150px;
+    width: 150;
+    background-color: aqua;
+    position: fixed;
+    margin: 0 auto;
+    top: 100px;
+    left: 200px;
+
+}
