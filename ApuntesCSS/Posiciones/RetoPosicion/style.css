@@ -1,20 +1,25 @@
 .aqui {
+  position: relative;
   color: red;
+  pointer-events: painted;
 }
 
 .oculto {
   position: absolute;
-  bottom: 120%;
-  background: black;
-  color: white;
+  bottom: 80%;
+  left: 0;
+  background: rgb(74, 73, 73);
+  color: rgb(25, 0, 255);
+  border-color: aqua;
   border-radius: 4px;
-  pointer-events: none;
-}
 
-.oculto {
   opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  padding: 2px;
 }
 
-.aqui:hover::before .oculto {
+.aqui:hover .oculto {
   opacity: 1;
 }
