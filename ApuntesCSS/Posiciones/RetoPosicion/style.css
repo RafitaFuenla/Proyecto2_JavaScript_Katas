@@ -11,8 +11,7 @@
   background: rgb(74, 73, 73);
   color: rgb(25, 0, 255);
   border-color: aqua;
-  border-radius: 4px;
-
+  border-radius: 2px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
