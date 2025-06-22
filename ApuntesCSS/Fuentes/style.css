@@ -31,8 +31,9 @@
   font-family: "RobotoFontItalic";
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
-.import {
-  font-family: "Sevillana", cursive;
+
+.sevillana {
+  font-family: "Sevillana";
 }
