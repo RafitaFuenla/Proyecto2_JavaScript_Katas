@@ -42,7 +42,6 @@ const precioTotal = sable1.precio + sable2.precio;
 
 console.log("Precio sables:", precioTotal);
 
-
 // Ejercicio 2.4 //
 let precioBaseGlobal = 10000;
 precioBaseGlobal = 25000;
@@ -54,33 +53,33 @@ const nave2 = {
   precioFinal: 80000,
 };
 
-console.log(nave1.precioFinal + precioBaseGlobal);
-console.log(nave2.precioFinal + precioBaseGlobal);
+console.log("Precio final nave1:", nave1.precioFinal + precioBaseGlobal);
+console.log("Precio final nave2:", nave2.precioFinal + precioBaseGlobal);
 
 /* EJERCICIO 3 */
 // Ejercicio 3.1 //
 let numberA = 10 * 5;
-console.log(numberA);
+console.log("(Ejercicio 3.1)", numberA);
 
 // Ejercicio 3.2 //
 let numberB = 10 / 2;
-console.log(numberB);
+console.log("(Ejercicio 3.2)", numberB);
 
 // Ejercicio 3.3 //
 let numberC = 15 % 9;
-console.log(numberC);
+console.log("(Ejercicio 3.3)", numberC);
 
 // Ejercicio 3.4 //
 let p = 10;
 let j = 5;
 let o = p + j;
-console.log(o);
+console.log("(Ejercicio 3.4)", o);
 
 // Ejercicio 3.5 //
 let c = 10;
 let m = 5;
 let l = c * m; /* Cambio i por l para evitar errores */
-console.log(l);
+console.log("(Ejercicio 3.5)", l);
 
 /* EJERCICIO 4 */
 // Ejercicio 4.1 //
@@ -160,9 +159,9 @@ for (let i = 0; i <= 9; i++) {
 // Ejercicio 6.3 //
 for (let i = 1; i <= 10; i++) {
   if (i === 10) {
-    console.log('¡Dormido!');
+    console.log("¡Dormido!");
   } else {
-    console.log('Intentando dormir 🐑');
+    console.log("Intentando dormir 🐑");
   }
 }
 
@@ -175,7 +174,7 @@ function greaterNumber(numberOne, numberTwo) {
   }
 }
 
-greaterNumber( 7, 9); 
+greaterNumber(7, 9);
 
 /* EJERCICIO 8 */
 const avengers = [
@@ -197,8 +196,7 @@ function findLongestWord(stringList) {
   return longest;
 }
 
-console.log(findLongestWord(avengers)); 
-
+console.log(findLongestWord(avengers));
 
 /* EJERCICIO 9 */
 const numbers = [1, 2, 3, 5, 45, 37, 58];
@@ -211,13 +209,13 @@ function sumNumbers(numberList) {
   return suma;
 }
 
-console.log(sumNumbers(numbers)); 
-
+console.log(sumNumbers(numbers));
 
 /* EJE]RCICIO 10 */
 const numbers2 = [12, 21, 38, 5, 45, 37, 6]; // Cambio a numbers2
 
-function average(numberList2) { //cambio a numberlist2
+function average(numberList2) {
+  //cambio a numberlist2
   let suma = 0;
   for (let i = 0; i < numberList2.length; i++) {
     suma += numberList2[i];
@@ -228,8 +226,6 @@ function average(numberList2) { //cambio a numberlist2
 console.log(average(numbers2));
 
 /* EJERCICIO 11 */
-
-
 
 /* EJERCICIO 12 */
 
