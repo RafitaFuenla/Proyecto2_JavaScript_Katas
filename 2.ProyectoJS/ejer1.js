@@ -85,81 +85,82 @@ console.log("(Ejercicio 3.5)", l);
 // Ejercicio 4.1 //
 const aldeanos = ["Fibrilio", "Narciso", "Vacarena", "Tendo", "Nendo"];
 const posicion = 1;
-console.log(aldeanos[3]);
+console.log("(Ejercicio 4.1)", aldeanos[3]);
 
 // Ejercicio 4.2 //
 aldeanos.push("Cervasio");
-console.log(aldeanos);
+console.log("(Ejercicio 4.2)", aldeanos);
 
 // Ejercicio 4.3 //
 aldeanos.shift();
 aldeanos.unshift("Bambina");
-console.log(aldeanos);
+console.log("(Ejercicio 4.3)", aldeanos);
 
 // Ejercicio 4.4 //
 aldeanos.reverse();
-console.log(aldeanos);
+console.log("(Ejercicio 4.4)", aldeanos);
 
 // Ejercicio 4.5 //
 const index = aldeanos.indexOf("Narciso");
 if (index !== -1) {
   aldeanos.splice(index, 1, "Canela");
 }
-console.log(aldeanos);
+console.log("(Ejercicio 4.5)", aldeanos);
 
 // Ejercicio 4.6 //
-console.log(aldeanos.slice(-1)[0]);
+console.log("(Ejercicio 4.6)", aldeanos.slice(-1)[0]);
 
 /* EJERCICIO 5 */
 const number1 = 10;
 const number2 = 20;
 const number3 = 2;
 
-if (number1 === 10) {
-  console.log();
+// ejemplo
+if(number1 === 10){
+    console.log("(Ejercicio 5)", 'number1 es estrictamente igual a 10')
 }
 
 if (number2 / number1 == 2) {
-  console.log();
+  console.log("(Ejercicio 5)", "number2 dividido entre number1 es igual a 2");
 }
 
 if (number1 !== number2) {
-  console.log();
+  console.log("(Ejercicio 5)", "number1 es estrictamente distinto a number2");
 }
 
 if (number3 != number1) {
-  console.log();
+  console.log("(Ejercicio 5)", "number3 es distinto number1");
 }
 
 if (number3 * 5 == number1) {
-  console.log();
+  console.log("(Ejercicio 5)", "number3 por 5 es igual a number1");
 }
 
 if (number3 * 5 == number1 && number1 * 2 == number2) {
-  console.log();
+  console.log("(Ejercicio 5)", "number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
 }
 
-if (number2 / 2 == number1 || number1 / 5 == number3) {
-  console.log();
+if (number2 / 2 == number1 ||  number1 / 5 == number3) {
+  console.log("(Ejercicio 5)", "number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
 
 /* EJERCICIO 6 */
 // Ejercicio 6.1 //
 for (let i = 0; i <= 9; i++) {
-  console.log(i);
+  console.log("(Ejercicio 6.1)", i);
 }
 
 // Ejercicio 6.2 //
 for (let i = 0; i <= 9; i++) {
   if (i % 2 === 0) {
-    console.log(i);
+    console.log("(Ejercicio 6.2)", i);
   }
 }
 
 // Ejercicio 6.3 //
 for (let i = 1; i <= 10; i++) {
   if (i === 10) {
-    console.log("¡Dormido!");
+    console.log("(Ejercicio 6.3)", "¡Dormido!");
   } else {
     console.log("Intentando dormir 🐑");
   }
@@ -168,9 +169,9 @@ for (let i = 1; i <= 10; i++) {
 /* EJERCICIO 7 */
 function greaterNumber(numberOne, numberTwo) {
   if (numberOne > numberTwo) {
-    console.log(numberOne);
+    console.log("(Ejercicio 7)", numberOne);
   } else {
-    console.log(numberTwo);
+    console.log("(Ejercicio 7)", numberTwo);
   }
 }
 
@@ -196,7 +197,7 @@ function findLongestWord(stringList) {
   return longest;
 }
 
-console.log(findLongestWord(avengers));
+console.log("(Ejercicio 8)", findLongestWord(avengers));
 
 /* EJERCICIO 9 */
 const numbers = [1, 2, 3, 5, 45, 37, 58];
@@ -209,7 +210,7 @@ function sumNumbers(numberList) {
   return suma;
 }
 
-console.log(sumNumbers(numbers));
+console.log("(Ejercicio 9)", sumNumbers(numbers));
 
 /* EJE]RCICIO 10 */
 const numbers2 = [12, 21, 38, 5, 45, 37, 6]; // Cambio a numbers2
@@ -223,7 +224,7 @@ function average(numberList2) {
   return suma / numberList2.length;
 }
 
-console.log(average(numbers2));
+console.log("(Ejercicio 10)", average(numbers2));
 
 /* EJERCICIO 11 */
 
