@@ -15,67 +15,15 @@ const names = [
   'Jessica',
   'Marc'
 ];
-function nameFinder(nameList) {
-  // Completar
+function nameFinder(nameList, nameToFind) {
+  const posicion = nameList.indexOf(nameToFind);
 
-  console.log(names.indexOf("Peter"));
+  if (posicion !== -1) {
+    return { existe: true, posicion: posicion };
+  } else {
+    return { existe: false };
+  }
 }
-console.log(names.indexOf("Peter"));
 
-/* EJERCICIO 14 */
-
-/* EJERCICIO 15 */
-
-/* EJERCICIO 16 */
-
-/* EJERCICIO 17 */
-
-/* EJERCICIO 18 */
-
-/* EJERCICIO 19 */
-
-/* EJERCICIO 20 */
-
-/* EJERCICIO 21 */
-
-/* EJERCICIO 22 */
-
-/* EJERCICIO 23 */
-
-/* EJERCICIO 24 */
-
-/* EJERCICIO 25 */
-
-/* EJERCICIO 26 */
-
-/* EJERCICIO 27 */
-
-/* EJERCICIO 28 */
-
-/* EJERCICIO 29 */
-
-/* EJERCICIO 30 */
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
+// Prueba
+console.log(nameFinder(names, "Tony"));
