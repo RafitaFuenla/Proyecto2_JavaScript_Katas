@@ -13,51 +13,20 @@ const placesToTravel = [
   { id: 44, name: "Filipinas" },
   { id: 59, name: "Madagascar" },
 ];
+// Creamos un arrays vacio (noElimnados) donde ingresaremos los elemtnos que cumplan la condicion
+const noElimnados = [];
 
-/* EJERCICIO 19 */
+  for (let i=0; i < placesToTravel.length ; i++) {
+    // "placesToTravel.length" define todo el array
+    // Inicializmos el indice en 0 para recorrer el arrays desde la primera posicion y establecemos la condicion mientras i cumpla la condicion, avanzamos.
+    // Establecemos una condicion IF en la cual si los ID son difretnes a 11 y 40 ...
+    if (placesToTravel[i].id !==11 && placesToTravel[i].id !==40){
+    // Entonces se agregara al array nuevo.
+      noElimnados.push(placesToTravel[i])
 
-/* EJERCICIO 20 */
-
-/* EJERCICIO 21 */
-
-/* EJERCICIO 22 */
-
-/* EJERCICIO 23 */
-
-/* EJERCICIO 24 */
-
-/* EJERCICIO 25 */
-
-/* EJERCICIO 26 */
-
-/* EJERCICIO 27 */
-
-/* EJERCICIO 28 */
-
-/* EJERCICIO 29 */
-
-/* EJERCICIO 30 */
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
+    };
+  }
+  
+console.log(noElimnados)
+// Imprimirmos noEliminados porque son los que cumplen con la condicion de que no haya id 11/40
+    // i++ es =  i + i se acumula y se suma al valor
