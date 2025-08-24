@@ -1,5 +1,6 @@
 /* EJERCICIO 22 */
-/*Usa un for para remplazar todas las comidas que no sean veganas con las frutas del array de frutas.
+/*Usa un for para remplazar todas las comidas
+que no sean veganas con las frutas del array de frutas.
 
 Recuerda no usar frutas duplicadas.
 
@@ -18,13 +19,23 @@ const foodSchedule = [
   { name: "Pasta", isVegan: true },
 ];
 
-for (let food of foodSchedule){
-    if (food.isVegan === false){
+let fruitIdx = 0; // contador para saber qué fruta toca
 
-    }
+for (let i = 0; i < foodSchedule.length; i++) { // recorro todo el menú
+  if (!foodSchedule[i].isVegan) {  // si no es vegano
+    noVegan.push(foodSchedule[i].name); // lo guardo en la lista de no veganos
+    
+    // lo sustituyo por una fruta
+    foodSchedule[i] = { 
+      name: fruits[fruitIdx], 
+      isVegan: true 
+    };
 
+    fruitIdx++; // paso a la siguiente fruta
+  }
 }
-
+console.log(noVegan);        // ["Salmon", "Burger"]
+console.log(foodSchedule);
 
 /* EJERCICIO 23 */
 
