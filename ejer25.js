@@ -27,7 +27,7 @@ for (let i = 0; i < movies.length; i++){
 }
 
 for (let i = 0; i < movies.length; i++){
-    if (movies[i].releaseYear > 2000){
+    if (movies[i].releaseYear < 2000){
         despues2000.push(movies[i].title)
     }
 }
@@ -35,36 +35,3 @@ for (let i = 0; i < movies.length; i++){
 console.log(antes2000)
 console.log(despues2000)
 
-/* EJERCICIO 26 */
-
-/* EJERCICIO 27 */
-
-/* EJERCICIO 28 */
-
-/* EJERCICIO 29 */
-
-/* EJERCICIO 30 */
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */

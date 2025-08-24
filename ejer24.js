@@ -23,39 +23,3 @@ for (let i = 0; i < characters.length; i++){
 }
 
 console.log(humanCharacters)
-
-/* EJERCICIO 25 */
-
-/* EJERCICIO 26 */
-
-/* EJERCICIO 27 */
-
-/* EJERCICIO 28 */
-
-/* EJERCICIO 29 */
-
-/* EJERCICIO 30 */
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
