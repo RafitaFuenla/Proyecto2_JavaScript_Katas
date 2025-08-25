@@ -33,9 +33,6 @@ console.log(clasificados);
 
 
 
-
-
-
 /* EJERCICIO 31 */
 
 /* EJERCICIO 32 */
