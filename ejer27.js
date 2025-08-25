@@ -29,34 +29,4 @@ for (let i = 1; i < cartoons.length; i++) {
 
 console.log(old);
 
-//let arrayFiltrado = array.filter((elemento) => elemento > 3);
 
-/* EJERCICIO 28 */
-
-/* EJERCICIO 29 */
-
-/* EJERCICIO 30 */
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
