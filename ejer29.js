@@ -17,8 +17,16 @@ const starWarsMovies = [
   { title: 'Solo', releaseYear: 2018 }
 ];
 
-let decadas = 0
+const decadas = {};
 
-for (const starWarsMovie of starWarsMovies){
+for (const movie of starWarsMovies) {
+  const decada = Math.floor(movie.releaseYear / 10) * 10;
 
+  if (!decadas[decada]) {
+    decadas[decada] = [];
+  }
+
+  decadas[decada].push(movie.title);
 }
+
+console.log(decadas);

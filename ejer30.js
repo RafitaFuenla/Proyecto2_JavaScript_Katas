@@ -30,29 +30,3 @@ for (let i = 0; i < tracks.length; i++) {
 }
 
 console.log(clasificados);
-
-
-
-/* EJERCICIO 31 */
-
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
