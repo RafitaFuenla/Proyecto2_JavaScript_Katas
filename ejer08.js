@@ -10,13 +10,13 @@ const avengers = [
 ];
 
 function findLongestWord(stringList) {
-  let longest = stringList[0];
-  for (let i = 1; i < stringList.length; i++) {
-    if (stringList[i].length > longest.length) {
-      longest = stringList[i];
+  let longestWord = "";
+  for (const string of stringList) {
+    if (string.length > longestWord.length) {
+      longestWord = string;
     }
   }
-  return longest;
+  return longestWord;
 }
 
-console.log("(Ejercicio 8)", findLongestWord(avengers));
+console.log(findLongestWord(avengers));
