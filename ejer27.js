@@ -17,7 +17,7 @@ const cartoons = [
 ];
 
 let old = cartoons[0];
-// Creo una constante con la primera propiedad del objeto como supeustamente la mas antigua
+// Creo una constante con la primera propiedad del objeto como supuestamente la mas antigua
 
 for (let i = 1; i < cartoons.length; i++) {
     // Recorro todo el array

@@ -4,24 +4,27 @@ Pista: puedes generar un nuevo array y devolverlo.
 Puedes usar este array para probar tu función:*/
 
 const duplicates = [
-  'sushi',
-  'pizza',
-  'burger',
-  'potatoe',
-  'pasta',
-  'ice-cream',
-  'pizza',
-  'chicken',
-  'onion rings',
-  'pasta',
-  'soda'
+  "sushi",
+  "pizza",
+  "burger",
+  "potatoe",
+  "pasta",
+  "ice-cream",
+  "pizza",
+  "chicken",
+  "onion rings",
+  "pasta",
+  "soda",
 ];
 
 function removeDuplicates(list) {
-  return [...new Set(list)];
+  const unicos = [];
+  for (const element of list) {
+    if (!unicos.includes(element)) {
+    }
+    unicos.push(element);
+  }
+  console.log(unicos)
 }
 
-const uniqueFoods = removeDuplicates(duplicates);
-
-console.log(uniqueFoods);
-
+removeDuplicates(duplicates);

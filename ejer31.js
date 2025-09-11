@@ -1,5 +1,5 @@
 /* EJERCICIO 31 */
-/*Dada una lista de artistas con sus influencias, utiliza bucles anidados para listar todos los artistas y sus influencias directas e imprime cada par por consola.
+/*Dada una lista de artistas con sus influencias, utiliza bucles anidados para listar todos los artistas y sus influencias directas e imprime cada par por consola. 
 
 Ejemplo de salida:
 
@@ -16,34 +16,32 @@ David Bowie -> Chuck Berry
 David Bowie -> The Velvet Underground */
 
 const artists = [
-  { name: 'Kurt Cobain', influences: ['The Beatles', 'Pixies', 'Lead Belly'] },
-  { name: 'David Bowie', influences: ['Little Richard', 'Chuck Berry', 'The Velvet Underground'] },
-  { name: 'Eddie Vedder', influences: ['The Who', 'Neil Young', 'Jim Morrison'] },
-  { name: 'Freddie Mercury', influences: ['Liza Minnelli', 'Jimi Hendrix', 'Aretha Franklin'] },
-  { name: 'John Lennon', influences: ['Elvis Presley', 'Chuck Berry', 'Buddy Holly'] }
+  { name: "Kurt Cobain", influences: ["The Beatles", "Pixies", "Lead Belly"] },
+  {
+    name: "David Bowie",
+    influences: ["Little Richard", "Chuck Berry", "The Velvet Underground"],
+  },
+  {
+    name: "Eddie Vedder",
+    influences: ["The Who", "Neil Young", "Jim Morrison"],
+  },
+  {
+    name: "Freddie Mercury",
+    influences: ["Liza Minnelli", "Jimi Hendrix", "Aretha Franklin"],
+  },
+  {
+    name: "John Lennon",
+    influences: ["Elvis Presley", "Chuck Berry", "Buddy Holly"],
+  },
 ];
 
 // Añade tu código de bucle aquí
 
+for (const artista of artists) {
+ 
+  for ( let i = 0; i < artista.influences.length; i++){
 
-/* EJERCICIO 32 */
-
-/* EJERCICIO 33 */
-
-/* EJERCICIO 34 */
-
-/* EJERCICIO 35 */
-
-/* EJERCICIO 36 */
-
-/* EJERCICIO 37 */
-
-/* EJERCICIO 38 */
-
-/* EJERCICIO 39 */
-
-/* EJERCICIO 40 */
-
-/* EJERCICIO 41 */
-
-/* EJERCICIO 42 */
+  console.log("Nombre: " + artista.name + " => Influencia: " + artista.influences[i]);
+  }
+    
+}
