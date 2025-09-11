@@ -27,8 +27,7 @@ function averageWord(list) {
       total += item.length;
     }
   }
-   return total / list.length;
-
+  return total / list.length;
 }
 
 console.log(averageWord(mixedElements));

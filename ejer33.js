@@ -18,5 +18,13 @@ const capitals = {
 };
 
 function getCapital(country) {
-  // insert code
+    for (let pais in capitals) {
+      if (pais === country) {
+        return "➡️  " + capitals[pais]
+      }
+    }
+return "❌ Desconozco ese dato"
 }
+
+console.log(getCapital("Spain"))
+console.log(getCapital("Japon"))
