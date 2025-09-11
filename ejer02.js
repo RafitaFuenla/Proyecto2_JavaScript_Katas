@@ -44,5 +44,9 @@ const nave2 = {
   precioFinal: 80000,
 };
 
-console.log("Precio final nave1:", nave1.precioFinal + precioBaseGlobal);
-console.log("Precio final nave2:", nave2.precioFinal + precioBaseGlobal);
+const precioFinalNave1 = nave1.precioBase + precioBaseGlobal;
+const precioFinalNave2 = nave2.precioBase + precioBaseGlobal;
+
+console.log("Precio final nave1:", precioFinalNave1);
+console.log("Precio final nave2:", precioFinalNave2);
+
