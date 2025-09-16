@@ -8,5 +8,11 @@ Puedes usar este array para probar tu función: */
 const numbers = [1, 2, 3, 5, 45, 37, 58];
 
 function sumNumbers(numberList) {
-  
+  let suma = 0;
+  for (number of numberList) 
+    suma += number;
+
+  return suma;
 }
+
+console.log("La suma de todo el array es:", sumNumbers(numbers));
