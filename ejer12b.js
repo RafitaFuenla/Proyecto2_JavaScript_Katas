@@ -34,3 +34,17 @@ function removeDuplicates(list) {
 
 
 console.log(removeDuplicates(duplicates))
+
+
+// AYUDA IA. METODO MAS MODERNO y FACIL:
+//  const resultado = [...new Set(lista)];
+/* ¿Qué hace cada parte?
+
+new Set(lista) = "Caja mágica, toma todas estas frutas pero quédate solo con una de cada tipo"
+
+Resultado: Set {manzana, pera, plátano}
+
+
+... = "Saca todas las frutas de la caja mágica y ponlas en una caja normal"
+
+Resultado: [manzana, pera, plátano] */
