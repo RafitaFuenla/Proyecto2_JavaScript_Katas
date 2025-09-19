@@ -32,4 +32,4 @@ function repeatCounter(list) {
   return contador;
 }
 
-console.log(repeatCounter(words));
+console.log(repeatCounter(words));  
