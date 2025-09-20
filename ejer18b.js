@@ -14,12 +14,11 @@ const placesToTravel = [
   { id: 59, name: "Madagascar" },
 ];
 
-const sin = []
-for ( let i = 0; i < placesToTravel.length; i++){
-    if (placesToTravel[i].id !== 11 && placesToTravel[i].id !== 40){ 
-       sin.push(placesToTravel[i])
-
-    }
+const sin = [];
+for (let i = 0; i < placesToTravel.length; i++) {
+  if (placesToTravel[i].id !== 11 && placesToTravel[i].id !== 40) {
+    sin.push(placesToTravel[i]);
+  }
 }
 
-console.log(sin)
+console.log(sin);
