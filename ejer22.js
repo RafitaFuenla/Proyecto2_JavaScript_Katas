@@ -19,19 +19,16 @@ const foodSchedule = [
   { name: "Pasta", isVegan: true },
 ];
 
-let fruitIdx = 0; // contador para saber qué fruta toca
+let contadorFrutas = 0; // contador para saber qué fruta toca
 
 for (let i = 0; i < foodSchedule.length; i++) { // recorro todo el menú
   if (!foodSchedule[i].isVegan) {  // si no es vegano
     noVegan.push(foodSchedule[i].name); // lo guardo en la lista de no veganos
     
     // lo sustituyo por una fruta
-    foodSchedule[i] = { 
-      name: fruits[fruitIdx], 
-      isVegan: true 
-    };
+    foodSchedule[i] = { name: fruits[contadorFrutas], isVegan: true};
 
-    fruitIdx++; // paso a la siguiente fruta
+    contadorFrutas++; // paso a la siguiente fruta
   }
 }
 console.log(noVegan);        // ["Salmon", "Burger"]
