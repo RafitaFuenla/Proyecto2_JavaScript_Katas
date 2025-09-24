@@ -20,13 +20,13 @@ const movies = [
   { name: "Eternal Sunshine of the Spotless Mind", durationInMinutes: 108 },
 ];
 
-
-
-
+const larga = [];
+const mediana = [];
+const corta = [];
 
 
 // Se podria de esta manera?
-/* for (const movie of movies) {
+for (const movie of movies) {
   if (movie.durationInMinutes < 100) {
     console.log(`Esta pelicula dura poco: ${movie.name} `);
   } else if (movie.durationInMinutes > 100 && movie.durationInMinutes < 200) {
@@ -35,4 +35,4 @@ const movies = [
     console.log(`Esta peliculas es muy larga: ${movie.name}`);
   }
 }
- */
+ 
