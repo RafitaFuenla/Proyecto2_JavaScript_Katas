@@ -26,5 +26,5 @@ for (const movie of movies){
       afterYear2000.push(movie.title)
     }
 }
-console.log(`Peliculas de antes del año 2000 ${beforeYear2000}`);
-console.log(`Peliculas emitidas despues del 2000 ${afterYear2000}`)
+console.log(`Peliculas de antes del año 2000: ${beforeYear2000}`);
+console.log(`Peliculas emitidas despues del 2000: ${afterYear2000}`)
