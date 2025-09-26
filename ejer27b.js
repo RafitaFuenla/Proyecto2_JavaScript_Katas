@@ -20,7 +20,7 @@ const cartoons = [
 let nombreMasAntiguo = "";
 let anoMasAntiguo = Infinity; // Empezamos con un número muy grande
 
-// Recorremos cada cartoon
+
 for (const cartoon of cartoons) {
   // Si este cartoon es más antiguo (año menor) que el que tenemos guardado
   if (cartoon.debut < anoMasAntiguo) {
