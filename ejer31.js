@@ -35,7 +35,7 @@ const artists = [
   },
 ];
 
-// Añade tu código de bucle aquí
+
 
 for (const artista of artists) {
  

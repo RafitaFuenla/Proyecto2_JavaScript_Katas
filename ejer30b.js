@@ -1,28 +1,24 @@
-/* Ejercicio 30
-Dada una lista de canciones, clasifícalas en un objeto donde las claves sean los géneros y los valores sean arrays de canciones de ese género.
+/* Ejercicio 31
+Dada una lista de artistas con sus influencias, utiliza bucles anidados para listar todos los artistas y sus influencias directas e imprime cada par por consola.
 
-Utiliza bucles para estructurar este objeto e imprime el resultado por consola. */
+Ejemplo de salida:
 
-const tracks = [
-  { title: "Enter Sandman", genre: "Metal" },
-  { title: "Back in Black", genre: "Rock" },
-  { title: "Bohemian Rhapsody", genre: "Rock" },
-  { title: "Blinding Lights", genre: "Pop" },
-  { title: "Old Town Road", genre: "Country" },
-  { title: "Smells Like Teen Spirit", genre: "Grunge" },
-  { title: "Bad Guy", genre: "Pop" },
-  { title: "Thunderstruck", genre: "Rock" },
-  { title: "Hotel California", genre: "Rock" },
-  { title: "Stairway to Heaven", genre: "Rock" },
+Kurt Cobain -> The Beatles
+
+Kurt Cobain -> Pixies
+
+Kurt Cobain -> Lead Belly
+
+David Bowie -> Little Richard
+
+David Bowie -> Chuck Berry
+
+David Bowie -> The Velvet Underground */
+
+const artists = [
+  { name: 'Kurt Cobain', influences: ['The Beatles', 'Pixies', 'Lead Belly'] },
+  { name: 'David Bowie', influences: ['Little Richard', 'Chuck Berry', 'The Velvet Underground'] },
+  { name: 'Eddie Vedder', influences: ['The Who', 'Neil Young', 'Jim Morrison'] },
+  { name: 'Freddie Mercury', influences: ['Liza Minnelli', 'Jimi Hendrix', 'Aretha Franklin'] },
+  { name: 'John Lennon', influences: ['Elvis Presley', 'Chuck Berry', 'Buddy Holly'] }
 ];
-
-const classGenero = [];
-
-for (const track of tracks) {
-  if (!classGenero[track.genre]) {
-    classGenero[track.genre] = [];
-  }
-  classGenero[track.genre].push(track.title);
-}
-
-console.log(classGenero)

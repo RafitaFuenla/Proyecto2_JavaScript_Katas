@@ -27,6 +27,6 @@ for (let i = 0; i < tracks.length; i++) {
     clasificados[track.genre] = []; // creo el array si no existía
   }
   clasificados[track.genre].push(track.title); // meto la canción
-}
+} 
 
 console.log(clasificados);
