@@ -41,7 +41,7 @@ for (const artista of artists) {
  
   for ( let i = 0; i < artista.influences.length; i++){
 
-  console.log("Nombre: " + artista.name + " => Influencia: " + artista.influences[i]);
+  console.log(`Nombre: ${artista.name} Influencia: ${artista.influences[i]}`);
   }
     
 }
