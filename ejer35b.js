@@ -7,7 +7,7 @@ const mutants = [
   { name: "Wolverine", power: "regeneration" },
   { name: "Magneto", power: "magnetism" },
   { name: "Professor X", power: "telepathy" },
-  { name: "Jean Grey", power: "telepathy", },
+  { name: "Jean Grey", power: "telepathy" },
   { name: "Rogue", power: "power absorption" },
   { name: "Storm", power: "weather manipulation" },
   { name: "Mystique", power: "shape-shifting" },
@@ -34,4 +34,3 @@ function findMutantByPower(mutants, power) {
 
 console.log(findMutantByPower(mutants, "telepathy"));
 console.log(findMutantByPower(mutants, "magnetism"));
-
