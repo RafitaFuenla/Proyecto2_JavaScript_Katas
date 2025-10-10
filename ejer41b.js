@@ -5,6 +5,11 @@ Que la función use el parametro para simular una tirada de dado y retornar el r
 
 Si no se te ocurre como hacer un numero aleatorio no te preocupes. Busca información sobre la función de JavaScript Math.random() */
 
-function rollDice(){
 
+
+function rollDice(caras) {
+  let resultado = Math.floor(Math.random() * caras) + 1;
+  return resultado;
 }
+
+console.log(`El numero aleatorio es ${rollDice(80)}`);
